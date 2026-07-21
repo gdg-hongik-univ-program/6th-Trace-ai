@@ -15,16 +15,16 @@ import json
 import chromadb
 from pydantic import BaseModel
 
-# --- [약속 데이터 스키마 (Pydantic)] ---
+# --- [데이터 스키마 (Pydantic)] ---
 class Prerequisite(BaseModel):
     name: str
     chapter: str | None = None
     depth: int = 1
 
 class QuizItem(BaseModel):
-    quiz_id: str          # 채점할 때 매칭용 (필수)
+    quiz_id: str          # 채점할 때 매칭용 
     question: str
-    answer: str           # 정답 (프론트로 안 보냄)
+    answer: str           # 정답 
     concept: str          # 어떤 개념 확인용인지
 
 class GradeResult(BaseModel):

@@ -17,3 +17,6 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+#가영
+test_kg.py

@@ -59,7 +59,7 @@ vectorstore = Chroma(
 
 
 # --- LLM & 체인 조립 ---
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash", temperature=0)
 structured_answer = llm.with_structured_output(CoreConcept)
 
 extract_prompt = ChatPromptTemplate.from_messages([
